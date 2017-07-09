@@ -1,18 +1,53 @@
 .wrapper {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 270px;
-  background-color: #fff;
   color: #444;
   margin: 40px;
 }
 
 .box {
-  width: 250px;
-  height: 150px;
-  background-color: #444;
+  display: inline-block;
+  width: 33%;
   color: #fff;
-  border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
+  box-sizing: border-box;
   font-size: 150%;
+  position: relative;
+}
+
+.box-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box:hover a {
+  display: flex;
+}
+
+.box img {
+  filter: grayscale(20%);
+}
+
+.box:hover img {
+  opacity: 0.7;
+}
+
+.box a {
+  font-size: 37px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.box img {
+  display: block;
+  width: 100%;
 }
