@@ -383,3 +383,7 @@ img.logosec {
     background: #6E2C00;
   }
 }
+
+ul.nav.active {
+  background-color: rgba(0, 0, 0, 0.5)
+}
