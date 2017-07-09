@@ -1,6 +1,6 @@
 $(function() {
   $(window).on("scroll", function() {
-    if($(window).scrollTop() > 100) {
+    if($(window).scrollTop() > 110) {
       $("ul.nav").addClass("active");
     } else {
       $("ul.nav").removeClass("active");
