@@ -1,43 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="../stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-    <title>Orion's Dungeon</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul class="nav">
-          <a href="../index">
-            <img class="logosec" src="../images/logo3.png" alt="logo">
-          </a>
-          <li><a href="../about">About</a></li>
-          <li><a href="../contact">Contact</a></li>
-          <li><a href="../work">Work</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="content-container project">
-      <h1>Orion's Dungeon</h1>
-      <img class="cover" src="../images/orionlogo.gif">
-      <h4>HTML, CSS, jQuery, git</h4>
-      <p>I decided to create a traditional roguelike game with pixel art graphics. Writing this game was a bit tricky in the beginning, once I got used to the logic it became fairly simple as I had to repeat most of it for the different scenarios. For the logic I used jQuery and stored state in the location of the tiles in the DOM. Used keyboard events for player movement and timers for random enemy movement and attack.</p>
-      <div class="project-links">
-        <a href="https://orionsdungeon.herokuapp.com/" target="_blank">
-          <img src="../images/live.png" alt="live">
-          <span>Live Preview</span>
-        </a>
-        <a href="https://github.com/Anacgbarreto/wdi-project-1" target="_blank">
-          <img src="../images/code.png" alt="code">
-          <span>View Source</span>
-        </a>
-      </div>
-    </div>
-    <div class="background"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-  </body>
-</html>
+extends ../layouts/page.pug
+
+block content
+  .content-container.project
+    h1 Orion's Dungeon
+    img.cover(src='../images/orionlogo.gif')
+    h4 HTML, CSS, jQuery, git
+    p
+      | I decided to create a traditional roguelike game with pixel art graphics. Writing this game was a bit tricky in the beginning, once I got used to the logic it became fairly simple as I had to repeat most of it for the different scenarios. For the logic I used jQuery and stored state in the location of the tiles in the DOM. Used keyboard events for player movement and timers for random enemy movement and attack.
+    .project-links
+      a(href='https://orionsdungeon.herokuapp.com/', target='_blank')
+        img(src='../images/live.png', alt='live')
+        span Live Preview
+      a(href='https://github.com/Anacgbarreto/wdi-project-1', target='_blank')
+        img(src='../images/code.png', alt='code')
+        span View Source
