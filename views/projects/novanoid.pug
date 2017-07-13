@@ -1,0 +1,16 @@
+extends ../layouts/page.pug
+
+block content
+  .content-container.project
+    h1 Novanoid
+    img.cover(src='../images/novanoid.gif')
+    h4 HTML, CSS, jQuery, Bootstrap, Google Maps, Instagram API, Node.js, MongoDB
+    p
+      | I created an app involving one of my passions: Tattoos. I chose to make a website for people to find their next tattoo artist or inspiration for their next tattoo. I created my own API, and integrated with Facebook login and the Instagram photo API.
+    .project-links
+      a(href='http://novanoid.herokuapp.com/', target='_blank')
+        img(src='../images/live.png', alt='live')
+        span Live Preview
+      a(href='https://github.com/Anacgbarreto/wdi-project-2', target='_blank')
+        img(src='../images/code.png', alt='code')
+        span View Source
